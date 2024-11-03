@@ -31,7 +31,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-800`}
       >
-        {children}
+        <main role={`main`}>
+          {children}
+        </main>
         <Analytics/>
         <SpeedInsights />
       </body>

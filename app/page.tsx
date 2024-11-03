@@ -54,7 +54,7 @@ const TodoApp = () => {
     <div className="max-w-md mx-4 sm:mx-auto p-6 mt-14 rounded-lg shadow-lg bg-slate-500">
       <h1 className="text-2xl font-bold mb-4 text-center">{`Ma Todo List`}</h1>
 
-      <form onSubmit={addTask}  className="flex gap-2 mb-4">
+      <form name={`tasks form`} onSubmit={addTask} className="flex gap-2 mb-4">
         <input
           type="text"
           value={newTask}
@@ -63,7 +63,8 @@ const TodoApp = () => {
           className="flex-1 p-2 border rounded bg-slate-300 placeholder:text-gray-600"
         />
         <button type={"submit"} className="p-2 bg-blue-500 text-white ring-gray-300 ring-1 rounded hover:bg-blue-600">
-          <Plus size={20} />
+          <Plus size={20} className={`sm:hidden`} />
+          <p className="hidden sm:block">Ajouter</p>
         </button>
       </form>
 

@@ -1,9 +1,8 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import { Plus, Trash2, Save, Check } from 'lucide-react';
+import { Plus, Trash2, Check } from 'lucide-react';
 import {toast, Toaster} from "sonner"
-import {id} from "postcss-selector-parser";
 
 interface Task {
   id: number;

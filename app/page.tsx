@@ -54,7 +54,7 @@ const TodoApp = () => {
     <div className="max-w-md mx-4 sm:mx-auto p-6 mt-14 rounded-lg shadow-lg bg-slate-500">
       <h1 className="text-2xl font-bold mb-4 text-center">{`Ma Todo List`}</h1>
 
-      <form name={`tasks form`} onSubmit={addTask} className="flex gap-2 mb-4">
+      <form id={`task_form`} name={`tasks form`} onSubmit={addTask} className="flex gap-2 mb-4">
         <input
           type="text"
           value={newTask}

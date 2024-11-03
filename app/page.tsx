@@ -56,13 +56,14 @@ const TodoApp = () => {
 
       <form id={`task_form`} name={`tasks form`} onSubmit={addTask} className="flex gap-2 mb-4">
         <input
+          name={`task`}
           type="text"
           value={newTask}
           onChange={(e) => setNewTask(e.target.value)}
           placeholder="Nouvelle tâche..."
           className="flex-1 p-2 border rounded bg-slate-300 placeholder:text-gray-600"
         />
-        <button type={"submit"} className="p-2 bg-blue-500 text-white ring-gray-300 ring-1 rounded hover:bg-blue-600">
+        <button name={`add`} type={"submit"} className="p-2 bg-blue-500 text-white ring-gray-300 ring-1 rounded hover:bg-blue-600">
           <Plus size={20} className={`sm:hidden`} />
           <div className="hidden sm:block">Ajouter</div>
         </button>

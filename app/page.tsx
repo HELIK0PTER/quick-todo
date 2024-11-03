@@ -64,7 +64,7 @@ const TodoApp = () => {
         />
         <button type={"submit"} className="p-2 bg-blue-500 text-white ring-gray-300 ring-1 rounded hover:bg-blue-600">
           <Plus size={20} className={`sm:hidden`} />
-          <p className="hidden sm:block">Ajouter</p>
+          <div className="hidden sm:block">Ajouter</div>
         </button>
       </form>
 
